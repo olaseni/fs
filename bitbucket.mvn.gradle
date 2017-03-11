@@ -1,5 +1,11 @@
 apply plugin: 'maven'
 
+
+// Default properties
+rootProject.ext.ARTIFACT_VERSION = rootProject.version
+rootProject.ext.ARTIFACT_PACKAGE = rootProject.group
+rootProject.ext.ARTIFACT_NAME = rootProject.name
+
 repositories {
     maven { url "https://raw.github.com/synergian/wagon-git/releases" }
 }
