@@ -3,6 +3,7 @@ apply plugin: 'maven'
 
 // Default properties
 // Providing defaults both as a lookup index for properties that can be customised and for reasonable execution
+// You should provide customizations in a "gradle.properties" file
 rootProject.ext.ARTIFACT_VERSION = rootProject.version
 rootProject.ext.ARTIFACT_PACKAGE = rootProject.group
 rootProject.ext.ARTIFACT_NAME = rootProject.name
