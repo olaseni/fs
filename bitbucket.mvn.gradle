@@ -5,14 +5,14 @@ apply plugin: 'maven'
 // Providing defaults both as a lookup index for properties that can be customised and for reasonable execution
 // You should provide customizations in a "gradle.properties" file
 ext.defaultPropertyMap = [
-        ARTIFACT_VERSION : rootProject.version,
-        ARTIFACT_PACKAGE : rootProject.group,
-        ARTIFACT_NAME : rootProject.name,
-        ARTIFACT_PACKAGING : 'jar', // Could be 'aar','jar', etc
-        REPOSITORY_NAME : 'maven_repository',
-        COMPANY : 'company',
-        USERNAME : null,
-        PASSWORD : null]
+        'ARTIFACT_VERSION' : rootProject.version,
+        'ARTIFACT_PACKAGE' : rootProject.group,
+        'ARTIFACT_NAME' : rootProject.name,
+        'ARTIFACT_PACKAGING' : 'jar', // Could be 'aar','jar', etc
+        'REPOSITORY_NAME' : 'maven_repository',
+        'COMPANY' : 'company',
+        'USERNAME' : null,
+        'PASSWORD' : null]
 
 repositories {
     maven { url "https://raw.github.com/synergian/wagon-git/releases" }
